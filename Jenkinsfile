@@ -1,16 +1,20 @@
 pipeline {
    agent any
     stages {
-        stage('Build') { 
+        stage('Compile Stage') { 
             steps {
-               echo 'build stage'
+               echo 'Compile Stage'
 		git url: 'https://github.com/jrjena136/spring-boot-jsonpath'
-		sh 'mvn -B -DskipTests clean package war:war'
-            }
-        }
+		    withMaven(maven:'Maven_3_5_4'){
+		    	sh 'mvn clean compile'
+		    }
+	   }
         stage('Deploy') { 
             steps {
                 echo 'deploying code' 
+		    withMaven(maven:'Maven_3_5_4'){
+		    	sh 'mvn deploy'
+		    }
             }
         }
     }
