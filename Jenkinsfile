@@ -7,13 +7,13 @@ pipeline {
         stage('Compile Stage') { 
             steps {
                echo 'Compile Stage'
-		sh "mvn clean verify install package"
+		sh "mvn clean verify install package war:war"
 	   }
 	}
         stage('Deploy Stage') { 
             steps {
                 echo 'deploying code' 
-		sh "mvn deploy"
+		sh "mvn deploy -DaltDeploymentRepository=internal.repo::default::file:///home/jyoti/repo"
             }
         }
     }
