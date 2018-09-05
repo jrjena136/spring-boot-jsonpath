@@ -7,7 +7,6 @@
 	<artifactId>spring-boot-jsonpath</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-	<finalName>${project.artifactId}-${project.version}</finalName>
 
 	<name>spring-boot-jsonpath</name>
 	<description>Spring Boot Application with jsonpath library</description>
@@ -53,6 +52,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>${project.artifactId}-${project.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
