@@ -5,8 +5,9 @@
 
 	<groupId>org.jyoti.dev</groupId>
 	<artifactId>spring-boot-jsonpath</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<version>1.0/version>
+	<packaging>war</packaging>
+	<finalName>${project.artifactId}-${project.version}</finalName>
 
 	<name>spring-boot-jsonpath</name>
 	<description>Spring Boot Application with jsonpath library</description>
@@ -63,7 +64,7 @@
 	       <repository>
 		 <id>internal.repo</id>
 		 <name>Internal repo</name>
-		 <url>file:///home/jyoti/repository</url>
+		 <url>file:///home/jyoti/repo/org/jyoti/dev/spring-boot-jsonpath/1.0</url>
 	       </repository>
    	</distributionManagement>
 
