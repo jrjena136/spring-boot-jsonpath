@@ -13,7 +13,7 @@ pipeline {
         stage('Deploy Stage') { 
             steps {
                 echo 'deploying code' 
-		sh "mvn deploy -DaltDeploymentRepository=internal.repo::default::file:///home/jyoti/repo/org/jyoti/dev/spring-boot-jsonpath/1.0/org/jyoti/dev/spring-boot-jsonpath/1.0"
+		sh "mvn deploy"
             }
         }
     }
