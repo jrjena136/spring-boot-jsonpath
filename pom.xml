@@ -58,6 +58,17 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>  
+				 <groupId>org.apache.tomcat.maven</groupId>  
+				 <artifactId>tomcat7-maven-plugin</artifactId>  
+				 <version>1.0</version>  
+				 <configuration>  
+				  <url>http://localhost:9080/manager/html</url>  
+				  <server>TomcatServer</server> 
+				  <username>tomcat</username>  
+				  <password>tomcat</password>   
+				 </configuration>   
+			</plugin>
 		</plugins>
 	</build>
 	<distributionManagement>
