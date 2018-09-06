@@ -71,13 +71,13 @@
 			</plugin>
 		</plugins>
 	</build>
-	<distributionManagement>
+	<!--<distributionManagement>
 	       <repository>
 		 <id>internal.repo</id>
 		 <name>Internal repo</name>
 		 <url>file:///home/jyoti/repo/org/jyoti/dev/spring-boot-jsonpath/1.0</url>
 	       </repository>
-   	</distributionManagement>
+   	</distributionManagement>-->
 
 
 </project>
