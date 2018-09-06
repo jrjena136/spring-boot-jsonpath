@@ -49,6 +49,12 @@
 			<artifactId>json-path</artifactId>
 			<version>2.2.0</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat8-maven-plugin -->
+		<!--<dependency>
+		    <groupId>org.apache.tomcat.maven</groupId>
+		    <artifactId>tomcat8-maven-plugin</artifactId>
+		    <version>3.0-r1756463</version>
+		</dependency>-->
 	</dependencies>
 
 	<build>
@@ -58,15 +64,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>  
-				 <groupId>org.apache.tomcat.maven</groupId>  
-				 <artifactId>tomcat7-maven-plugin</artifactId>  
-				 <version>1.0</version>  
+			<plugin>   
+				<groupId>org.apache.tomcat.maven</groupId>
+		    		<artifactId>tomcat8-maven-plugin</artifactId>
+		    		<version>3.0-r1756463</version>
 				 <configuration>  
-				  <url>localhost:9080/manager/text/deploy?path=/spring-boot-jsonpath</url>  
-				  <server>TomcatServer</server> 
-				  <username>tomcat</username>  
-				  <password>tomcat</password>   
+					  <url>localhost:9080/manager/text/deploy?path=/spring-boot-jsonpath</url>  
+					  <server>TomcatServer</server> 
+					  <username>tomcat</username>  
+					  <password>tomcat</password>   
 				 </configuration>   
 			</plugin>
 		</plugins>
