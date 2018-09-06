@@ -11,11 +11,6 @@
 	<name>spring-boot-jsonpath</name>
 	<description>Spring Boot Application with jsonpath library</description>
 	<parent>
-		<artifactId>tomcat-maven-plugin</artifactId>
-		<groupId>org.apache.tomcat.maven</groupId>
-		<version>2.2</version>
-	</parent>
-	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.13.RELEASE</version>
@@ -72,6 +67,7 @@
 			<plugin> 
 				<groupId>org.apache.tomcat.maven</groupId>
 		    		<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
 				 <configuration>  
 					  <url>http://localhost:3030/manager/text/deploy?path=/spring-boot-jsonpath</url>  
 					  <server>TomcatServer</server> 
