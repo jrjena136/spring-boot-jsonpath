@@ -51,11 +51,11 @@
 			<version>2.2.0</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat8-maven-plugin -->
-		<dependency>
+		<!--<dependency>
 		    <groupId>org.apache.tomcat.maven</groupId>
 		    <artifactId>tomcat8-maven-plugin</artifactId>
 		    <version>3.0-r1756463</version>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 
 	<build>
