@@ -69,7 +69,8 @@
 		    		<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				 <configuration>  
-					  <url>http://localhost:3030/manager/text/deploy?path=/spring-boot-jsonpath</url>  
+					  <url>http://localhost:3030/manager/html</url>
+					 <path>spring-boot-jsonpath></path>
 					  <server>TomcatServer</server> 
 					  <username>tomcat</username>  
 					  <password>s3cret</password>   
