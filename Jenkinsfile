@@ -13,7 +13,7 @@ pipeline {
         stage('Deploy Stage') { 
             steps {
                 echo 'deploying code' 
-		sh "mvn tomcat7:deploy -X"
+		sh "mvn tomcat7:deploy"
             }
         }
     }
