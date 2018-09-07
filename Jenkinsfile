@@ -7,7 +7,7 @@ pipeline {
         stage('Compile Stage') { 
             steps {
                echo 'Compile Stage'
-		sh "mvn clean install package war:war"
+		sh "mvn clean dependency:tree -Dincludes=com.fasterxml.jackson.core install package war:war"
 	   }
 	}
         stage('Deploy Stage') { 
