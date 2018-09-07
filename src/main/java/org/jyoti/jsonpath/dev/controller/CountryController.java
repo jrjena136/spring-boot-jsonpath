@@ -1,17 +1,17 @@
 package org.jyoti.jsonpath.dev.controller;
 
-import java.util.List;
+//import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
-import org.jyoti.jsonpath.dev.dto.Country;
+//import org.jyoti.jsonpath.dev.dto.Country;
 import org.jyoti.jsonpath.dev.service.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+//import com.fasterxml.jackson.core.JsonProcessingException;
 import javax.ws.rs.Produces;
 
 @RestController
@@ -30,7 +30,7 @@ public class CountryController {
 		map.put("message","successfully deployed into tomcat through jenkin");
 		return map;
 	}
-	@SuppressWarnings("unchecked")
+	/*@SuppressWarnings("unchecked")
 	@GetMapping("/getCountryNames")
 	public List<String> getCountryNames() throws JsonProcessingException{
 		System.out.println("************Inside Controller**************");
@@ -39,9 +39,9 @@ public class CountryController {
 		System.out.println("response : " + response);
 		System.out.println("************Controller End****************");
 		return response;
-	}
+	}*/
 	
-	@SuppressWarnings("unchecked")
+	/*@SuppressWarnings("unchecked")
 	@GetMapping("/getCountries")
 	public List<Country> getCountryDetails() throws JsonProcessingException{
 		System.out.println("************Inside Controller**************");
@@ -50,8 +50,8 @@ public class CountryController {
 		System.out.println("response : " + response);
 		System.out.println("************Controller End****************");
 		return response;
-	}
-	@SuppressWarnings("unchecked")
+	}*/
+	/*@SuppressWarnings("unchecked")
 	@GetMapping("/getCountryData")
 	public List<Country> getCountryData() throws JsonProcessingException{
 		System.out.println("************Inside Controller**************");
@@ -60,6 +60,6 @@ public class CountryController {
 		System.out.println("response : " + response);
 		System.out.println("************Controller End****************");
 		return response;
-	}
+	}*/
 
 }
