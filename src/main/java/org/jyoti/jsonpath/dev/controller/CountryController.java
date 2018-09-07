@@ -28,7 +28,7 @@ public class CountryController {
 		Map<String,String> map = new HashMap<String,String>();
 		map.put("status","success");
 		map.put("message","successfully deployed into tomcat through jenkin");
-		retun map;
+		return map;
 	}
 	@SuppressWarnings("unchecked")
 	@GetMapping("/getCountryNames")
