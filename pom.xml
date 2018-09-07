@@ -77,11 +77,10 @@
 				<version>2.2</version>
 				 <configuration>  
 					  <url>${maven.tomcat.url}</url>
-					 <path>/spring-boot-jsonpath></path>
+					 <path>/spring-boot-jsonpath</path>
 					  <server>TomcatServer</server> 
 					  <username>tomcat</username>  
 					  <password>s3cret</password>
-					 <update>true</update>
 				 </configuration>   
 			</plugin>
 			<plugin>
