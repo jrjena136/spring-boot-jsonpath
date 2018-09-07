@@ -21,13 +21,19 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<maven.tomcat.url>http://localhost:3030/manager/text</maven.tomcat.url>
+		<maven.tomcat.url>http://localhost:3030/</maven.tomcat.url>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			  <exclusions>
+    				<exclusion>
+      					<groupId>org.springframework.boot</groupId>
+      					<artifactId>spring-boot-starter-tomcat</artifactId>
+    				</exclusion>
+  			</exclusions>
 		</dependency>
 
 		<dependency>
