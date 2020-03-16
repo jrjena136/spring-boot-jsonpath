@@ -114,7 +114,7 @@
 				<version>2.2</version>
 				<configuration>
 					<url>${maven.tomcat.url}</url>
-					<path>/spring-boot-jsonpath</path>
+					<path>/spring-boot-app</path>
 					<server>TomcatServer</server>
 					<update>true</update>
 				</configuration>
