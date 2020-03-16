@@ -16,15 +16,9 @@ public class CountryService {
 	
 	ObjectMapper objectMapper = new ObjectMapper();
 	public Object getFormattedResponse(String jsonExpression, Class<?> classtype) throws JsonProcessingException {
-		System.out.println("****************Inside Service class****************");
-		System.out.println("jsonExpression : " + jsonExpression + " | classType : " + classtype);
-		System.out.println("Calling invoker");
 		CountryResponse response = invoker.getCountryRespone();
-		System.out.println("response from service : " + response.toString());
 		String jsonResponse = objectMapper.writeValueAsString(response);
-		Object countryResponse = JsonPath.parse(jsonResponse).read(jsonExpression, classtype);
-		return countryResponse;
 		
+		return JsonPath.parse(jsonResponse).read(jsonExpression, classtype);
 	}
-
 }
