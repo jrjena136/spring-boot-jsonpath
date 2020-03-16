@@ -115,8 +115,7 @@
 				<configuration>
 					<url>${maven.tomcat.url}</url>
 					<path>/spring-boot-jsonpath</path>
-					<username>admin</username>
-					<password>test123</password>
+					<server>TomcatServer</server>
 					<update>true</update>
 				</configuration>
 			</plugin>
