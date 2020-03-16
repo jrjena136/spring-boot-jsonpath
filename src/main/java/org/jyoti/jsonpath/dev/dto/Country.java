@@ -21,7 +21,7 @@ import lombok.ToString;
 public class Country {
 
 	@JsonProperty("Country")
-	private String country;
+	private String countryName;
 	@JsonProperty("Data")
 	private Data data;
 }

@@ -11,21 +11,20 @@ import org.springframework.stereotype.Component;
 @Component
 public class CountryInvoker {
 	public CountryResponse getCountryRespone() {
-		System.out.println("*****************Inside Invoker******************");
 		CountryResponse response = new CountryResponse();
 		response.setDescription("Map Containing Country, Capital, Currency, and some States of that County");
 		response.setRegion("Asia");
-		List<Country> countries = new ArrayList<Country>();
+		List<Country> countries = new ArrayList<>();
 		
 		Country country = new Country();
 		Data data = new Data("New Delhi", 11, 25, "INR");
-		country.setCountry("India");
+		country.setCountryName("India");
 		country.setData(data);
 		countries.add(country);
 		
 		country = new Country();
 		data = new Data("Kathmandu", 10, 20, "Nepalese Rupee");
-		country.setCountry("Nepal");
+		country.setCountryName("Nepal");
 		country.setData(data);
 		countries.add(country);
 		response.setCountries(countries);
@@ -33,5 +32,4 @@ public class CountryInvoker {
 		return response;
 		
 	}
-
 }
